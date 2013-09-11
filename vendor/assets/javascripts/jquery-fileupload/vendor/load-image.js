@@ -177,8 +177,8 @@
             (options.maxHeight || height) / height
         );
         if (scale < 1) {
-            width = Math.ceil(width * scale);
-            height = Math.ceil(height * scale);
+            width = Math.ceil(width);
+            height = Math.ceil(height);
         }
         if (img.getContext || (options.canvas && canvas.getContext)) {
             canvas.width = width;
