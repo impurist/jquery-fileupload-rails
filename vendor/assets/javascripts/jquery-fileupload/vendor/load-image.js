@@ -74,8 +74,8 @@
             (options.maxHeight || height) / height
         );
         if (scale < 1) {
-            width = parseInt(width, 10);
-            height = parseInt(height, 10);
+            width = parseInt(width * scale, 10);
+            height = parseInt(height * scale, 10);
         }
         if (img.getContext || (options.canvas && canvas.getContext)) {
             canvas.width = width;
